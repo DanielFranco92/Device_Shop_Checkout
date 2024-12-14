@@ -1,6 +1,3 @@
-# Device_Shop_Checkout
-Build an Apple shop checkout page website challenge with provided design. The layout should have 2 main sections: a summary section that lists all the products and a contact form section where users need to provide their name, email, and country.
-
 <!-- Please update value in the {}  -->
 
 <h1 align="center">Device Shop Checkout | devChallenges</h1>
@@ -11,7 +8,7 @@ Build an Apple shop checkout page website challenge with provided design. The la
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://celebrated-marigold-7f580a.netlify.app/">
       Demo
     </a>
     <span> | </span>
