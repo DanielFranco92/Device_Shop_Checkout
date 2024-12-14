@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Device Shop Checkout | devChallenges.io</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="navigation">
+      <div class="navigation__container">
+        <h1 class="navigation__heading">Checkout</h1>
+        <p class="navigation__item">3 items</p>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="shop">
+        <section class="summary">
+          <div class="products">
+            <div class="product">
+              <div class="product__image">
+                <img class="product__img" src="/img/Gold.png" alt="gold">
+              </div>
+    
+              <div class="product__description">
+                <h2 class="product__heading">iPhone 12 Pro</h2>
+                <p class="product__color">Golden</p>
+                <p class="product__count">x 1</p>
+              </div>
+    
+              <div class="product__prices">
+                <h2 class="product__price">$999.00</h2>
+                <p class="product__close">X</p>
+              </div>
+            </div><!-- .product -->
+  
+            <div class="product">
+              <div class="product__image">
+                <img class="product__img" src="/img/Apple-watch.png" alt="apple watch">
+              </div>
+    
+              <div class="product__description">
+                <h2 class="product__heading">Apple Watch</h2>
+                <p class="product__color">Blue</p>
+                <p class="product__count">x 1</p>
+              </div>
+    
+              <div class="product__prices">
+                <h2 class="product__price">$399.00</h2>
+                <p class="product__close">X</p>
+              </div>
+            </div><!-- .product -->
+  
+            <div class="product">
+              <div class="product__image">
+                <img class="product__img" src="/img/iMac.png" alt="imac">
+              </div>
+    
+              <div class="product__description">
+                <h2 class="product__heading">iMac</h2>
+                <p class="product__color">Green</p>
+                <p class="product__count">x 1</p>
+              </div>
+    
+              <div class="product__prices">
+                <h2 class="product__price">$1199.00</h2>
+                <p class="product__close">X</p>
+              </div>
+            </div><!-- .product -->
+          </div>
+          
+          <hr class="horizontal">
+          
+          <div class="coupon">
+            <form class="coupon__apply">
+              <input class="coupon__input" type="text" placeholder="Enter coupon code">
+              <input class="coupon__submit" type="button" value="Apply Coupon">
+            </form>
+  
+            <div class="coupon__subtotal">
+              <p class="coupon__subtotalprice">Sub total</p>
+              <p class="coupon__subtotaltotal">$2597.00</p>
+            </div>
+  
+            <div class="coupon__tax">
+              <p class="coupon__taxprice">Tax</p>
+              <p class="coupon__taxtotal">$623.28</p>
+            </div>
+  
+            <div class="coupon__total">
+              <p class="coupon__totalprice">Total</p>
+              <p class="coupon__totaltotal">$3220.28</p>
+            </div>
+          </div>
+        </section>
+  
+        <section class="information">
+          <h2 class="information__heading">Contact Information</h3>
+          
+          <form class="form">
+            <label for="name" class="form__label">First & Last name</label>
+            <input type="text" id="name" name="id" placeholder="Enter first & last name" class="form__input">
+            <label form="email" class="form__label">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" class="form__input">
+            <div class="form__city">
+              <div>
+                <label for="country" class="form__label">Country</label>
+                <select class="form__input" id="country">
+                  <option value="finland">Finland</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="code" class="form__label">Postal Code</label>
+                <input type="number" id="code" name="code" placeholder="00270" class="form__input">
+              </div>
+            </div>
+            <input type="submit" value="Continue" class="form__submit">
+          </form>
+        </section>
+
+      </div>
+    </main>
+  </body>
+</html>

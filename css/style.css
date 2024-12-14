@@ -1,0 +1,260 @@
+:root {
+    --font: "Roboto", serif;
+    --CharcoalBlack : #1D1D1F;
+    --steelBlue: #394150;
+    --lightGray: #D2D5DA;
+    --offWhite: #F3F4F6;
+    --white: #FFFFFF;
+    --softGray: #E5E7EB;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--font);
+    font-size: 1.6rem;
+    height: 24rem;
+    background-image: url('../img/background-image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--offWhite);
+}
+
+.container {
+    max-width: 128rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.navigation {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.navigation__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.5rem;
+}
+
+.navigation__item {
+    background-color: var(--CharcoalBlack);
+    padding: 0 1.2rem;
+    text-transform: uppercase;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.shop {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+@media (min-width: 1024px) {
+    .shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.summary {
+    background-color: var(--softGray);
+    padding: 3rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .summary {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+        box-shadow: 0px 4px 4px -1px rgba(17, 23, 41, 0.05);
+        margin-bottom: 5rem;
+    }
+}
+
+.products {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.product__image {
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+}
+
+.product__description,
+.product__prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__description {
+    flex-grow: 2;
+}
+
+.product__heading {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.product__color,
+.product__count,
+.product__close {
+    color: var(--steelBlue);
+}
+
+.product__count,
+.product__close {
+    margin: auto 0 0 0;
+}
+
+.product__close {
+    text-align: end;
+}
+
+.product__price {
+    font-size: 1.6rem;
+}
+
+.horizontal {
+    margin: 3rem 0;
+}
+
+.coupon__apply {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.coupon__input {
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.coupon__submit {
+    border: none;
+    padding: 1.5rem;
+    background-color: var(--CharcoalBlack);
+    color: var(--white);
+    border-radius: 0.5rem;
+}
+
+.coupon__subtotal,
+.coupon__tax,
+.coupon__total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coupon__subtotal,
+.coupon__tax {
+    margin-bottom: 1.5rem;
+    color: var(--steelBlue);
+    font-weight: 600;
+}
+
+.coupon__total {
+    color: var(--CharcoalBlack);
+    font-weight: 600;
+}
+
+.information {
+    background-color: var(--white);
+    padding: 3rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-bottom: 5rem;
+    box-shadow: 0px 4px 4px -1px rgba(17, 23, 41, 0.05);
+}
+
+@media (min-width: 1024px) {
+    .information {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1rem;
+    }
+}
+
+.information__heading {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    margin-bottom: 1.5rem;
+    display: block;
+    color: var(--steelBlue);
+}
+
+.form__input {
+    border: 1px solid var(--lightGray);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    background-color: var(--offWhite);
+    color: var(--steelBlue);
+    width: 100%;
+}
+
+.form__submit {
+    background-color: var(--CharcoalBlack);
+    color: var(--white);
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.form__city {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
